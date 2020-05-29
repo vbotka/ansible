@@ -134,7 +134,7 @@ You can also mix and match the values::
 Restricting execution with ``throttle``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The ``throttle`` keyword limits the number of workers for a particular task. It can be set at the block and task level. Use ``throttle`` to restrict tasks that may be CPU-intensive or interact with a rate-limiting API::
+The ``throttle`` keyword limits the number of workers for a particular task. It can be set at the block and task level. Use ``throttle`` to restrict tasks that may be CPU-intensive, interact with a rate-limiting API, or access a critical section::
 
     tasks:
     - command: /path/to/cpu_intensive_command
